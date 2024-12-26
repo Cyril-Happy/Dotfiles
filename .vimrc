@@ -78,3 +78,14 @@ inoremap <Left>  <ESC>:echoe "Use h"<CR>
 inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
+
+" Initialize vim-plug
+call plug#begin('~/.vim/plugged')
+
+" Plugin installation line, here you can add any plugins
+Plug 'neomake/neomake'
+
+" End plugin section
+call plug#end()
+
+    

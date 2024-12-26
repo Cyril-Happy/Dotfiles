@@ -3,7 +3,7 @@
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
+# export ZSH="$HOME/dotfiles/oh-my-zsh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -103,10 +103,13 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias find_and_cd="source /usr/local/bin/find_and_cd"
 source /usr/local/bin/mcd.sh
-source /home/felix/.clipboard.sh
-export EDITOR=vim
-bindkey -v
-# Set the cursor to a thin vertical bar
-echo '\e[5 q'
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /home/felix/Desktop/Missing_Semester/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/bin/clipboard.sh
+source /usr/local/bin/cdnote.sh
+alias  glog="git --no-pager log --all --graph --decorate"
+bindkey -v # Use vim keybindings in zsh
+alias fd='fdfind'
+export PATH=~/.npm-global/bin:$PATH
+bindkey '^[e' forward-word
+bindkey '^[b' backward-word
+
+git config --global core.pager ""
