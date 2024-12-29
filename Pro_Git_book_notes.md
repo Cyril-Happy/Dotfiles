@@ -1,0 +1,2 @@
+“plumbing” commands, subcommands that do low-level work and were designed to be chained together UNIX-style or called from scripts 美 / ˈpɔːrsəlɪn
+ “porcelain” commands. the more user-friendly commands 
