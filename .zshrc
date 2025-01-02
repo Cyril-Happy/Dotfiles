@@ -109,7 +109,5 @@ alias  glog="git --no-pager log --all --graph --decorate"
 bindkey -v # Use vim keybindings in zsh
 alias fd=fdfind
 export PATH=~/.npm-global/bin:$PATH
-bindkey '^[e' forward-word
-bindkey '^[b' backward-word
-
 git config --global core.pager ""
+alias gs="git status"

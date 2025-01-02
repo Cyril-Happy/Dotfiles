@@ -8,3 +8,5 @@
 	excludesfile = /home/felix/.gitignore
 [alias]
 	graph = log --all --graph --decorate --oneline
+[init]
+	defaultBranch = main
